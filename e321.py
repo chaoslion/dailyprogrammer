@@ -49,7 +49,7 @@ def time2word(value: str) -> str:
             if m < threshold:
                 # substract to lookup the second part of the number
                 m -= threshold - 10
-                # no second part: just use the threhold value
+                # no second part: just use the threshold value
                 if m == 0:
                     m = value
                 else:
@@ -67,7 +67,7 @@ def time2word(value: str) -> str:
     # combine parts and filter empty values
     return " ".join(filter(lambda x: x, result))
     
-    
+
 samples = {
     "00:00": "It's twelve am",
     "01:30": "It's one thirty am",
